@@ -9,6 +9,8 @@ package com.DesignPattern.AbstractFactoryPattern;
  */
 public class Client {
     public static void main(String[] args) {
+        // 根据不同的皮肤风格设置不同风格的按钮和文本框，
+        // 用户可以自定义选择皮肤，不需要修改原码
         SpringFactory springFactory = new SpringFactory();
         Button button = springFactory.createButton();
         button.display();
